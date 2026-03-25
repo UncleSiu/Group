@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>旅遊自由行</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <ul class="nav-links">
+            <li><a href="./index.html">首頁</a></li>
+            <li class="dropdown">
+                <a href="#">旅行資訊 ▾</a>
+                <div class="dropdown-content">
+                    <a href="asia-info.html">亞洲</a>
+                    <a href="europe-info.html">歐洲</a>
+                    <a href="america-info.html">美洲</a>
+                    <a href="africa-info.html">非洲</a>
+                    <a href="pacific-info.html">大洋洲</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">旅遊相冊 ▾</a>
+                <div class="dropdown-content">
+                    <a href="gallery-asia.html">亞洲</a>
+                    <a href="gallery-europe.html">歐洲</a>
+                    <a href="gallery-america.html">美洲</a>
+                    <a href="gallery-africa.html">非洲</a>
+                    <a href="gallery-pacific.html">大洋洲</a>
+                </div>
+            </li>
+
+            <li><a href="contact.html">聯繫我們</a></li>    
+            <li><a href="about.html">關於我們</a></li>
+        </ul>
+    </nav>
+
+    
+        <img src="./pictures/agent.jpg" id="banner"/>
+
+<br>
+  <br>  
+     <main id="info">
+
+<section id="three">
+
+    <h1 id="pl">倫敦眼</h1> 
+
+    
+<iframe  width="560" height="315" src="https://www.youtube.com/embed/20TUh_73-1M?si=9kgwP25CAeYE2QCy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+
+<div class="gallery">
+  <img src="./pictures/l1.jpg"  id="e1" alt="London Eye 1" onclick="openModal(this.src)">
+  <img src="./pictures/l2.jpeg" id="e2" alt="London Eye 2" onclick="openModal(this.src)">
+  <img src="./pictures/l3.jpg" id="e3" alt="London Eye 3" onclick="openModal(this.src)">
+ 
+
+</div>
+
+
+<!-- 彈出視窗層 -->
+<div id="myModal" class="modal" onclick="closeModal()">
+  <div class="modal-content">
+    <img id="imgPopup" src="" alt="Popup">
+  </div>
+</div>
+
+
+</section>
+
+
+<section id="four">
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5466494885964!2d-0.12209412338015467!3d51.50318637181234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2z5YCr5pWm55y8!5e0!3m2!1szh-TW!2shk!4v1774339503929!5m2!1szh-TW!2shk" width="550" height="450" style="border: 3px solid white;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+<p> 地點：Riverside Building, County Hall, Westminster Bridge Rd, London SE1 7PB。
+    開放時間：通常為上午 11:00 至下午 6:00，週末及特定日期會延長至晚上 8:30。建議透過 官方網站 確認最新時間。
+    體驗時間：旋轉一圈約需 30 分鐘，整體建議預留 1 至 2 小時。
+    景觀：在 32 個透明座艙內可欣賞 360 度市景，晴天時能遠眺 40 公里外的溫莎城堡。熱門地標包括國會大廈、大笨鐘、白金漢宮及聖保羅大教堂。 
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+</main>
+<footer>
+            <p>&copy Copyright <span id="date"></span> Free Tour Travel 保留所有權利</p>
+        </footer>   
+<script src="./script.js"></script>
+
+
+</div>
+</div>
+</body>
+</html> 
+
