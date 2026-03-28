@@ -254,7 +254,7 @@ img {
 
 
 
-.d1 {
+.mg-d1 {
     margin-top: 80px;
     padding: 20px;
     background-color: cyan;
@@ -263,7 +263,7 @@ img {
     }
 
 
-.d2 {
+.mg-d2 {
     background-color: lightblue;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -272,11 +272,11 @@ img {
     
 }
 
-.d3, .d4, .d5, .d6, .d7, .d11, .d15 {
+.mg-d3, .mg-d4, .mg-d5, .mg-d6, .mg-d7, .mg-d11, .mg-d15 {
         padding: 10px;
 }
 
-.d8, .d9, .d10, .d12, .d13, .d14, .d16, .d17, .d18 {
+.mg-d8, .mg-d9, .mg-d10, .mg-d12, .mg-d13, .mg-d14, .mg-d16, .mg-d17, .mg-d18 {
     border: 1px solid grey;
     padding: 10px;
     width:10%;
@@ -291,7 +291,7 @@ img {
 }
 
 
-.d8:hover , .d9:hover , .d10:hover , .d12:hover , .d13:hover , .d14:hover , .d16:hover , .d17:hover , .d18:hover {
+.mg-d8:hover , .mg-d9:hover , .mg-d10:hover , .mg-d12:hover , .mg-d13:hover , .mg-d14:hover , .mg-d16:hover , .mg-d17:hover , .mg-d18:hover {
    width: 100%; 
 
 
@@ -308,7 +308,7 @@ p {
 
 
 @media (min-width: 992px)  {
-    .d2 {
+    .mg-d2 {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
@@ -317,7 +317,7 @@ p {
 }
 
 @media (min-width: 1200px)  {
-    .d2 {
+    .mg-d2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;

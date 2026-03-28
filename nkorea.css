@@ -248,7 +248,7 @@ img {
 
 }
 
-.d1 {
+.nk-d1 {
     margin-top: 80px;
     padding: 20px;
     background-color: cyan;
@@ -257,7 +257,7 @@ img {
     }
 
 
-.d2 {
+.nk-d2 {
     background-color: lightblue;
     
     display: grid;
@@ -267,13 +267,13 @@ img {
     
 }
 
-.d3, .d4, .d5, .d6, .d7, .d11, .d15 {
+.nk-d3, .nk-d4, .nk-d5, .nk-d6, .nk-d7, .nk-d11, .nk-d15 {
     
     padding: 10px;
 
 }
 
-.d8, .d9, .d10, .d12, .d13, .d14, .d16, .d17, .d18 {
+.nk-d8, .nk-d9, .nk-d10, .nk-d12, .nk-d13, .nk-d14, .nk-d16, .nk-d17, .nk-d18 {
     padding: 10px;
     width:100%;
     height: auto;
@@ -284,7 +284,7 @@ img {
 }
 
 
-.d8:hover , .d9:hover , .d10:hover , .d12:hover , .d13:hover , .d14:hover , .d16:hover , .d17:hover , .d18:hover {
+.nk-d8:hover , .nk-d9:hover , .nk-d10:hover , .nk-d12:hover , .nk-d13:hover , .nk-d14:hover , .nk-d16:hover , .nk-d17:hover , .nk-d18:hover {
     opacity: 1;
 }
 
@@ -299,7 +299,7 @@ p {
 
 
 @media (min-width: 992px)  {
-    .d2 {
+    .nk-d2 {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
@@ -308,7 +308,7 @@ p {
 }
 
 @media (min-width: 1200px)  {
-    .d2 {
+    .nk-d2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;

@@ -248,7 +248,7 @@ img {
 
 }
 
-.d1 {
+.mn-d1 {
     margin-top: 80px;
     padding: 20px;
     background-color: cyan;
@@ -257,7 +257,7 @@ img {
     }
 
 
-.d2 {
+.mn-d2 {
     background-color: lightblue;
         display: grid;
     grid-template-columns: 1fr 1fr;
@@ -266,7 +266,7 @@ img {
     
 }
 
-.d3, .d4, .d5, .d6, .d7, .d11, .d15 {
+.mn-d3, .mn-d4, .mn-d5, .mn-d6, .mn-d7, .mn-d11, .mn-d15 {
     
     padding: 10px;
 
@@ -274,14 +274,14 @@ img {
 
 
 
-.d8 { background-image: url("./mann/mann3.png"); }
-.d9 { background-image: url("./mann/mann4.png"); }
-.d13 { background-image: url("./mann/mann7.png"); }
-.d14 { background-image: url("./mann/mann8.png"); }
-.d16 { background-image: url("./mann/mann9.png"); }
-.d18 { background-image: url("./mann/mann11.png"); }
+.mn-d8 { background-image: url("./mann/mann3.png"); }
+.mn-d9 { background-image: url("./mann/mann4.png"); }
+.mn-d13 { background-image: url("./mann/mann7.png"); }
+.mn-d14 { background-image: url("./mann/mann8.png"); }
+.mn-d16 { background-image: url("./mann/mann9.png"); }
+.mn-d18 { background-image: url("./mann/mann11.png"); }
 
-.d8, .d9, .d10, .d12, .d13, .d14, .d16, .d17, .d18 {
+.mn-d8, .mn-d9, .mn-d10, .mn-d12, .mn-d13, .mn-d14, .mn-d16, .mn-d17, .mn-d18 {
     padding: 10px;
     width:100%;
     height: auto;
@@ -291,11 +291,11 @@ img {
 }
 
 
-.d8, .d13, .d18 {
+.mn-d8, .mn-d13, .mn-d18 {
     clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
     }
 
-.d9, .d14, .d16 {
+.mn-d9, .mn-d14, .mn-d16 {
     border-radius: 25% 25% 25% 25%;
     }
 
@@ -313,7 +313,7 @@ p {
 
 
 @media (min-width: 992px)  {
-    .d2 {
+    .mn-d2 {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
@@ -322,10 +322,11 @@ p {
 }
 
 @media (min-width: 1200px)  {
-    .d2 {
+    .mn-d2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
     }
     
 }
+

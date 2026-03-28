@@ -248,7 +248,7 @@ img {
   display: block;
 }
 
-.d1 {
+.md-d1 {
     margin-top: 80px;
     padding: 20px;
     background-color: cyan;
@@ -257,7 +257,7 @@ img {
     }
 
 
-.d2 {
+.md-d2 {
     background-color: lightblue;
     
     display: grid;
@@ -267,13 +267,13 @@ img {
     
 }
 
-.d3, .d4, .d5, .d6, .d8, .d11, .d16 {
+.md-d3, .md-d4, .md-d5, .md-d6, .md-d8, .md-d11, .md-d16 {
     
     padding: 10px;
 
 }
 
-.d7, .d9, .d10, .d12, .d13, .d14, .d15, .d17, .d18 {
+.md-d7, .md-d9, .md-d10, .md-d12, .md-d13, .md-d14, .md-d15, .m-d17, .md-d18 {
     padding: 10px;
     width:100%;
     height: auto;
@@ -282,7 +282,7 @@ img {
 }
 
 
-.d7:hover , .d9:hover , .d10:hover , .d12:hover , .d13:hover , .d14:hover , .d15:hover , .d17:hover , .d18:hover {
+.md-d7:hover , .md-d9:hover , .md-d10:hover , .md-d12:hover , .md-d13:hover , .md-d14:hover , .md-d15:hover , .md-d17:hover , .md-d18:hover {
     transform: scale(1.2);
 }
 
@@ -297,7 +297,7 @@ p {
 
 
 @media (min-width: 992px)  {
-    .d2 {
+    .md-d2 {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
@@ -306,7 +306,7 @@ p {
 }
 
 @media (min-width: 1200px)  {
-    .d2 {
+    .md-d2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
