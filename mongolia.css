@@ -1,0 +1,326 @@
+
+/* Global Settings */
+* { box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+body { 
+    background-color:cadetblue;
+    color: #333; 
+    line-height: 1.6; 
+}
+
+
+footer {
+    background-color: rgb(183, 238, 131);
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    height: 1.5;
+}
+
+
+
+/* Navigation Bar */
+nav { 
+    background: #2c3e50; 
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 5%; 
+    position: sticky; 
+    top: 0; 
+    
+  
+  width: 100%;
+  height: 80px;
+  transition: all 0.3s ease; /* 讓變化更平滑 */
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0); /* 初始透明 */
+
+}
+
+#banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: filter 0.1s ease; /* 讓模糊變化平滑 */
+    position: relative;
+    z-index: 1;
+}
+
+
+.logo { 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+}
+.nav-links li { 
+    position: relative; 
+    padding: 10px 20px; 
+}
+.nav-links a { 
+    color: white; 
+    text-decoration: none; 
+    transition: 0.3s; 
+}
+.nav-links a:hover { 
+    color: #3498db; 
+}
+
+/* Dropdown Menu */
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background: #fff; 
+    min-width: 150px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    top: 100%; 
+    left: 0; 
+}
+.dropdown-content a { 
+    color: #333; 
+    padding: 12px 16px; 
+    display: block; 
+}
+.dropdown-content a:hover { 
+    background-color: rgb(191, 236, 143) 
+}
+.dropdown:hover 
+.dropdown-content { 
+    display: block; 
+}
+
+/* Hero Section (Home) */
+#banner {
+    height: auto !important;
+    width: 100%;
+    position:top;
+    /* cursor: pointer; */
+    /* transition: all 0.3s ease; */
+}
+#banner:hover {
+
+}
+
+/* Grid Layouts (Regions & Details) */
+.container { 
+    width: 100%; 
+    margin: 20px auto 0 auto; 
+    padding: 0 auto;
+    align-items: center;
+}
+.container-img {
+    width: cover;
+    /* display: flex; */
+    position: relative;
+    /* height: 50% !important; */
+    padding: 0 0 6rem 20px;
+    justify-content: center;
+}
+.region-buttons { 
+    display: flex; 
+    gap: 30px; 
+    margin-bottom: 12rem; 
+    flex-wrap: wrap; 
+    justify-content: center ;
+    text-align: center;
+    /* padding: 20px auto 10rem auto; */
+}
+.container h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.btn { 
+    padding: 5px 10px; 
+    background: rgb(191, 236, 143);
+    color: black; 
+    border: 2px solid red; 
+    cursor: pointer; 
+    border-radius: 35px; 
+    text-decoration-thickness: 2px; 
+    width: 10%;
+    /* transition: all 0.3s ease; */
+}
+.btn:hover { 
+    background:rgb(42, 12, 235) ; 
+    color: goldenrod;
+    /* transform: translateZ(10px);
+    translate: scale(1.1); */
+}
+
+/* 熱門推介 */
+section {
+    margin-bottom: 6rem;
+}
+section h3 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-top:  20px;
+    padding-top: 20px;
+}
+section p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+section img {
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* height: 50% !important; */
+    padding: 10px 0 0 0;
+}
+.feature { 
+    display: grid; 
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; 
+    margin-top: 40px;
+    /* margin-right: 20px; */
+}
+.card { 
+    background: linear-gradient(135deg, white 0%, lightyellow 40%, lightgreen 100%); 
+    padding: 20px;
+    border: 2px solid blueviolet; 
+    border-radius: 8px; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.card img { 
+    width: 100%; 
+    height: 150px; 
+    background: #c7fca3; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+.card .btn {
+    padding: 10px 5px; 
+    background: rgb(191, 236, 143); 
+    color: rgb(84, 92, 242); 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 25px; 
+    text-decoration: none; 
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* Contact Form */
+.contact-form { 
+    max-width: 600px; 
+    margin: auto; 
+    background: white; 
+    padding: 30px; 
+    border-radius: 8px; 
+}
+.contact-form input, 
+.contact-form textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+}
+
+
+* {
+    box-sizing: border-box;
+        margin: 0;
+    padding: 0;
+  
+}
+
+img {
+  width: 100%;
+  display: block;
+
+}
+
+
+
+
+.d1 {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: cyan;
+    font-size: 30px;
+    text-align: center;
+    }
+
+
+.d2 {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+}
+
+.d3, .d4, .d5, .d6, .d7, .d11, .d15 {
+        padding: 10px;
+}
+
+.d8, .d9, .d10, .d12, .d13, .d14, .d16, .d17, .d18 {
+    border: 1px solid grey;
+    padding: 10px;
+    width:10%;
+    height: auto;
+    position: center;
+    background: lightblue;
+    font-size: 30px;
+    color: coral;
+    transition: width 1s;
+   transition-timing-function: linear;
+   cursor: pointer;
+}
+
+
+.d8:hover , .d9:hover , .d10:hover , .d12:hover , .d13:hover , .d14:hover , .d16:hover , .d17:hover , .d18:hover {
+   width: 100%; 
+
+
+}
+
+h3 {
+    color: coral;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+@media (min-width: 992px)  {
+    .d2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+    
+}
+
+@media (min-width: 1200px)  {
+    .d2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+    
+}

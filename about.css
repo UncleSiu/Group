@@ -1,0 +1,51 @@
+h1 {
+    color: orangered;
+    font-size: 30px;
+    font-weight: 500;
+}
+h2, h3, h4, h5 {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 400;
+}
+p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container {
+    background: none;
+    background-color: rgb(252, 232, 194);
+    padding: 0 10px;
+} 
+
+footer {
+    height: 1;
+    page-break-after: always;
+}
+
+.btn { 
+    margin: 43rem;
+    padding: 0 10px; 
+    background: rgb(191, 236, 143);
+    color: black; 
+    border: 2px solid red; 
+    cursor: pointer; 
+    border-radius: 35px; 
+    text-decoration-thickness: 2px; 
+    width: 10%;
+    justify-content: center;h2, h3, h4, h5 {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 400;
+}
+    align-items: center;
+    /* text-align: center; */
+    /* transition: all 0.3s ease; */
+}
+.btn:hover { 
+    background:rgb(42, 12, 235) ; 
+    color: goldenrod;
+    /* transform: translateZ(10px);
+    translate: scale(1.1); */
+}

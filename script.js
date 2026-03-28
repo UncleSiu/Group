@@ -1,4 +1,4 @@
-    // Simple function to handle page jumping via JS
+// Simple function to handle page jumping via JS
     function goToPage(pageName) {
         window.location.href = pageName + ".html";
     }
@@ -45,7 +45,7 @@
             });
         }
 
-       window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function() {
     // 這裡的 'banner' 必須對應 HTML 的 id="banner"
     const bannerImage = document.getElementById('banner');
     
@@ -59,15 +59,32 @@
 });
 
 function openModal(src) {
-  document.getElementById("imgPopup").src = src;
-  document.getElementById("myModal").style.display = "flex";
+    document.getElementById("imgPopup").src = src;
+    document.getElementById("myModal").style.display = "flex";
 }
 
 function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModal").style.display = "none";
 }
 
 // 自動複製圖片以達成無縫滾動
 const gallery = document.querySelector('.gallery');
 gallery.innerHTML += gallery.innerHTML; 
 
+fetch('index2.html', 'index3.html', 'index4.html', 'index5.html')
+    .then(response => response.text())
+    .then(data => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, 'text/html');
+        const articleContent = doc.querySelectorAll('.about-info');
+       
+        // 取得要注入的容器
+        const container = document.getElementById("inject-content"); // 建議 ID 不要用空格
+       
+        if (articleContent.length > 0) {
+            articleContent.forEach(node => {
+                container.appendChild(node);
+            });
+        }
+    })
+    .catch(err => console.error('inject error', err));
